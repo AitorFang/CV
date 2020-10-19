@@ -1,0 +1,290 @@
+/* Dentro de cada selector, ordenar alfabeticamente las propiedades */
+body {
+    /* max-width: 2000px; */
+   /* overflow-x: hidden; */
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+   width: 100%;
+   
+}
+h1 {
+    font-size: 2.75rem;
+    font-weight: 200;
+    text-align: left;
+    
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 200;
+    margin-left: 50px;
+    text-align: left;
+    padding-top: 5%;
+    
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.75rem;
+    font-weight: 200;
+    color: #c4c4c4;
+    margin: 0;
+}
+
+p {
+    font-size: 3rem;
+}
+
+.brownSections {
+    background-color: #444444;
+    color: #c4c4c4;
+    /* padding: 5% 0px;
+    /* width: 100% */
+}
+
+.whiteSections {
+    /* padding: 5% 0; */
+    color: #191919;
+    /* width: 100% */
+}
+
+/* Containers */
+
+.container-fluid {
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+/* Cabecera */
+
+#navbar {
+    background-color: #444444 !important;
+}
+
+.menthaimg {
+    padding-left:1rem;
+   /*background-color: #444444;*/
+    position: absolute;
+    z-index:3;
+    top:2%
+
+}
+
+.cabeceradiv {
+    padding: 0% 0 15% 0;  
+    position: relative;
+    display: inline-block; 
+    background-image:url(file:///Users/Kinvara/MenthaW/images/cabecera.jpg);
+    background-position: center center; 
+    background-size: cover; 
+    height: 100%;
+}
+
+
+.edificio {
+    z-index:-1; 
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    bottom: 40%;
+    
+}
+.marca {
+   /* position: absolute; */
+   padding: 1% 0 0 2%;
+   display: inline-block;
+   height: 60%;
+   width: 80%;
+   right: 20%;
+
+}
+
+.hierbas    {
+    max-width: 100%;
+    height: auto;
+    margin-right: 80%;
+}    
+
+.titulo {
+    
+    /* text-align: center;
+    /* padding-top: 20px; */
+    padding-left:0.95%;
+    
+}
+.cabecera {
+      /*  width: 2000px;
+        height:1500px;
+        overflow-x: hidden;
+         */
+        position: relative;
+        display: inline-block;
+        background-image: url(file:///Users/Kinvara/MenthaW/images/cabecera.jpg);
+         background-position: 0% 0%; 
+         background-size: 100% 100%;
+         /* border-radius: 50%; */
+         width: 2000px;
+        /* height: 800px; */
+         height: 800px;
+        /* border: 1px solid #cecece; */
+        padding-top: 25px;
+        
+}
+.headerImage {
+    /* opacity: 0.3; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* top: -300px 0px 0px 0px; /* recortar la parte superior de la imagen */
+    
+
+}
+.textosCabecera {
+   /*  position: absolute; */
+    padding-left: 20%;
+    padding-top: 20%;
+}
+.lema {
+    color: #a2c591;
+    font-size: 3.5rem;
+}
+
+.sublema {
+    color: #c4c4c4;
+    font-size: 2rem;
+}
+
+/* About us ------------------------------------------*/
+
+.palote {
+    color: #a2c591;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.about1 {
+   /* background-color: teal; */
+   margin 10% 0 0 0;
+}
+
+.about2 {
+   /* background-color: tomato; */
+     margin 10% 0 0 0;
+}
+.imgpolen {
+    /* position: relative;
+    /* margin-left: 10%; */
+    max-width: 100%;
+    height: auto;
+    margin: 6% 0 6% 0;
+    
+}
+.divtextoabout{
+margin: 10% 5%;
+}
+
+.textoabout {
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: 200;
+}
+/* Empresas--------------------------------------*/
+.h4-empresas {
+    margin: 8px 0 16px 0;
+    font-size: 2rem;
+}
+.empresascard {
+    background-color: #444444;
+    border:0;
+    padding-bottom: 5%;
+}
+.empresas-button {
+    color: #a2c591;
+    border: 2px solid transparent;
+    border-color: #a2c591;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; 
+    right:38%;
+    bottom: 1%;   
+}
+
+.empresas-button:hover {
+    background-color: #a2c591;
+    border-color: #a2c591;
+}
+
+/* Particulares--------------------------------- */
+
+.h4-particulares {
+    margin: 8px 0 16px 0;
+    font-size: 2rem;
+}
+
+.particulares {
+    /* margin: 15% 8% 5% 8%; */
+    padding: 5% 8% 5% 8%; 
+}
+.card {
+    margin: 10px 0 10px 0;
+}
+
+.card-text {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: 32px 0 48px 0;
+}
+
+.particulares-button {
+    color: #a2c591;
+    border-color: #a2c591;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; 
+    right:4%;
+    bottom: 1%;   
+}
+
+.particulares-button:hover {
+    background-color: #a2c591;
+    border-color: #a2c591;
+}
+
+/* Footer */
+
+.footer1 {
+display: inline-block;
+}
+
+.footer2 {
+
+display:inline-block;
+width: 400px;
+height: 400px;
+text-align: center;
+}
+
+.imglogo {
+    max-width: 100%;
+    height: auto;
+}
+
+.contactdata {
+    margin: 100px 50px 0 0;  
+}
+
+.footer-icon {
+    margin: 20px 10px;
+    font-size: 1.5rem;
+}
+
+.footer-p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+
+}
+
+.container-fluid {
+    text-align: center;
+}
+*/
