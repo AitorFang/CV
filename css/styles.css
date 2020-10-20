@@ -39,8 +39,8 @@ p {
 .brownSections {
     background-color: #444444;
     color: #c4c4c4;
-    /* padding: 5% 0px;
-    /* width: 100% */
+    /* padding: 5% 0px; */
+    width: 100%;
 }
 
 .whiteSections {
@@ -64,6 +64,7 @@ p {
 
 .menthaimg {
     padding-left:1rem;
+    display: inline-block; 
    /*background-color: #444444;*/
     position: absolute;
     z-index:3;
@@ -76,8 +77,11 @@ p {
     position: relative;
     display: inline-block; 
     /* background-image:url(file:///Users/Kinvara/MenthaW/images/cabecera.jpg);*/
-    background-image:url("https://github.com/AitorFang/CV/blob/master/images/cabecera.jpg");
+    /* background-image:url("https://github.com/AitorFang/CV/blob/master/images/cabecera.jpg"); */
+    background-image:url("../images/cabecera.jpg"); 
     background-position: center center; 
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
     background-size: cover; 
     height: 100%;
 }
@@ -94,25 +98,30 @@ p {
 .marca {
    /* position: absolute; */
    padding: 1% 0 0 2%;
-   display: inline-block;
+   /* display: inline-block;*/
    height: 60%;
    width: 80%;
-   right: 20%;
+   right: 2%;
 
 }
 
 .hierbas    {
     max-width: 100%;
     height: auto;
-    margin-right: 80%;
+    /*margin-right: 90%; */
+    position: static;
 }    
+.imglogo {
+    width: 380px;
+    height: 180px;
+}
 
 .titulo {
     
     /* text-align: center;
     /* padding-top: 20px; */
     padding-left:0.95%;
-    
+    color: #c4c4c4;
 }
 .cabecera {
       /*  width: 2000px;
@@ -143,8 +152,8 @@ p {
 }
 .textosCabecera {
    /*  position: absolute; */
-    padding-left: 20%;
-    padding-top: 20%;
+   /* padding-left: 20%; */
+    padding-top: 30%; 
 }
 .lema {
     color: #a2c591;
@@ -154,6 +163,32 @@ p {
 .sublema {
     color: #c4c4c4;
     font-size: 2rem;
+}
+
+@media (max-width: 900px) {
+   .imglogo {
+    width: 254px;
+    height: 120px;
+    margin:0 auto;
+    } 
+    .titulo  {
+        font-size:2rem;
+    }
+    .textosCabecera {
+        padding-top: 50%; 
+    }
+    .lema {
+        font-size: 2rem;
+    }
+    .sublema {
+       font-size: 1.5rem;
+    }
+    .h2 {
+        font-size: 2rem;
+    }
+    .palote {
+        font-size: 2rem;
+    }
 }
 
 /* About us ------------------------------------------*/
