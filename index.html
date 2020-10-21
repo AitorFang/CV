@@ -3,219 +3,366 @@
 
 <head>
     <meta charset="UTF-8">
+    </meta>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </meta>
+
     <title>Mentha Executive Search</title>
+
     <!-- Google fonts -->
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap" rel="stylesheet">
+    </link>
+
     <!-- Bootstrap 4 -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
-    <!-- hoja de estilos -->
-    <link rel="stylesheet" href="css/styles.css"> 
+    </link>
 
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    </link>
+
+    <!-- hoja de estilos -->
+
+    <link rel="stylesheet" href="css/styles.css">
+    </link>
+
+    <!-- Necesario para que funcione botón desplegable de la barra de navegacion, son link js de Bootstrap -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <!-- Cabecera -->
-    <section id="Cabecera" class="brownSections">
-   <div class="container-fluid">
-        <nav id="navbar" class="navbar navbar-light bg-light">
-            <a class="navbar-brand menthaimg" href="#">
-            <img src="images/logoCabecera.png" class="d-inline-block align-top imglogo" alt="">
-           <h1 class="titulo">Executive Search</h1>
-            </a>
-        </nav>
-    </div> 
-    
-    <div class="container-fluid  cabeceradiv">
 
-       <!-- <img class="edificio" src="images/cabecera.jpg" alt="edificio"> -->
-       <!--<div class="marca"> -->
-            <!--<img class="hierbas"  src="images/logoCabecera.png" alt="Hierbas"> -->
-           <!-- <h1 class="titulo">Executive Search</h1> -->
+    <section id="Cabecera" class="brownSections">
+        <div class="container-fluid">
+<!--            <div class="col1">
+                <img src=" images/logoCabecera.png" class="d-inline-block align-top imglogo" alt="">
+                <h1 class="titulo">Executive Search</h1>
+            </div>
+            -->
+     <!--   <div class="epa"><h4>epa</h4></div> -->
+      <div class="row arriba"> 
+ 
+                <div class="col-lg-6 col1">
+                    <img src=" images/logoCabecera.png" class="d-inline-block align-top imglogo" alt="">
+                    <h1 class="titulo">Executive Search</h1>
+                </div>
+            
+                <div class="col-lg-12 ml-auto col2">
+                    <nav id="menu" class="navbar navbar-dark bg-dark">
+                        <!--   <a class="navbar-brand mr-auto"></a> -->
+
+
+                        <button class="navbar-toggler botonmenu" type="button" data-toggle="collapse"
+                            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item mr-auto active">
+                                    <a class="nav-link" href="#">
+                                        Home
+
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item mr-auto">
+                                    <a class="nav-link" href="#">About us</a>
+                                </li>
+
+                                <li class="nav-item mr-auto">
+                                    <a class="nav-link" href="#">Pricing</a>
+                                </li>
+
+                                <li class="nav-item dropdown mr-auto">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown
+                                        link</a>
+
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Action</a>
+
+                                        <a class="dropdown-item" href="#">Another action</a>
+
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+         </div> 
+            <!--      <nav id="navbar" class="navbar navbar-light bg-light"> 
         
-            <div class="textosCabecera">
-              <p class="lema">Te acompaño en tu búsqueda</p>
-              <p class="sublema">Servicios a particulares y empresas</p>
-             </div> 
-        <!--</div>-->
-       <!-- <img class="edificio" src="images/cabecera.jpg" alt="edificio"> -->
-    </div>
+    <a class="navbar-brand menthaimg" href="#">
+          <img src="images/logoCabecera.png" class="d-inline-block align-top imglogo" alt="">
+
+          <h1 class="titulo">Executive Search</h1>
+        </a>
+      </nav> -->
+
+
+
+
+            <div class="container-fluid  cabeceradiv">
+                <div class="textosCabecera">
+                    <p class="lema">Te acompaño en tu búsqueda</p>
+
+                    <p class="sublema">
+                        Servicios a particulares y empresas
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- About us -->
 
     <section id="nosotros" class="whiteSections">
-    <div class="container-fluid">
-
-        <div class="row">
-            <div class="col-lg-6 about1">
-                <h2> <span class="palote">|</span> About us</h2>
-                <div class="divtextoabout">
-                    <p class="textoabout">
-                        Nuestro compromiso con las empresas es realizar la búsqueda de los mejores
-                        candidatos para cubrir la necesidad del día a día.
-                        Pero puede ser que esos valores se encuentren en la empresa.
-                        Acompañamos y asesoramos a aquellos profesionales que quieren reorientar su carrera.
-                        Lo que podemos asegurar que en todos los casos nuestro compromiso es total.</p>
-                </div>
-            </div>
-            <div class="col-lg-6 about2">
-              <img class="imgpolen" src="images/granospolen.jpg" alt="imgpolen">
-
-            </div>
-
-
-        </div>
-    </div>
-  
-
-    <!-- Services for Enterprises -->
-    <section id="empresas" class="brownSections">
-    <div class="container-fluid">
-        <h2> <span class="palote">|</span> Services for Enter</h2>
-        <div class="row particulares">
-           
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card empresascard">
-                    <img src="images/iconoBusqueda.png" class="card-img-top" alt="Searching icon">
-                    <div class="card-body">
-                      <h4 class="h4-empresas">Reorientar carreras</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" class="btn btn-outline-success btn-lg empresas-button">
-                             Ampliar
-                          </button>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card empresascard">
-                    <img src="images/iconoBusqueda.png" class="card-img-top" alt="Searching icon">
-                    <div class="card-body">
-                      <h4 class="h4-empresas">Reorientar carreras</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" class="btn btn-outline-success btn-lg empresas-button">
-                             Ampliar
-                          </button>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card empresascard">
-                    <img src="images/iconoBusqueda.png" class="card-img-top" alt="Searching icon">
-                    <div class="card-body">
-                      <h4 class="h4-empresas">Reorientar carreras</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" class="btn btn-outline-success btn-lg empresas-button">
-                             Ampliar
-                          </button>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card empresascard">
-                    <img src="images/iconoBusqueda.png" class="card-img-top" alt="Searching icon">
-                    <div class="card-body">
-                      <h4 class="h4-empresas">Reorientar carreras</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" class="btn btn-outline-success btn-lg empresas-button">
-                             Ampliar
-                          </button>
-                    </div>
-                  </div>
-            </div>
-
-        </div>
-    </div>
-    </section>
-
-    <!-- Services for Particulars -->
-    <section id="particulares" class="whiteSections">
-    <div class="container-fluid">
-        <h2><span class="palote">|</span> Services for Partic</h2>
-        <div class="row particulares">
-           
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card">
-                    <img src="images/movingrocks.jpg" class="card-img-top" alt="Movingrock img">
-                    <div class="card-body">
-                      <h4 class="h4-particulares">Reorientar carreras</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button type="button" class="btn btn-outline-success btn-lg particulares-button">
-                             Ampliar
-                          </button>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card">
-                    <img src="images/movingrocks.jpg" class="card-img-top" alt="Movingrock img">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card">
-                    <img src="images/movingrocks.jpg" class="card-img-top" alt="Movingrock img">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card">
-                    <img src="images/movingrocks.jpg" class="card-img-top" alt="Movingrock img">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-            </div>
-
-        </div>
-    </div>
-    </section>
-
-    <!-- Footer -->
-    <section id="footer" class="brownSections">
-    <div class="container-fluid">
-        <h2><span class="palote">|</span> Contact</h2>
-        <div class="row">
-            <div class="col-md-6 footer1">
-
-               <img class="imglogo" src="images/LogoGris copia.png" alt="logo">
-            </div>
-            <div class="col-md-6 footer2">
-                <div class="contactdata">
-                    <p>Contacto</p>
-                    <p>Mail </p>
-                    <p>Wepage</p>
-                </div>
-            </div>
-        </div>
-
         <div class="container-fluid">
-            <i class="fab fa-linkedin footer-icon"></i>
-            <i class="fab fa-facebook-f footer-icon"></i>
-            <a href="https://www.linkedin.com/in/eliana-garc%C3%ADa-5513396/?originalSubdomain=es"><i class="fas fa-envelope footer-icon"></i></a>
+            <div class="row">
+                <div class="col-lg-6 col-sm-8 about1">
+                    <h2>
+                        <span class="palote">|</span>
 
-            <p class="footer-p">© Copyright 2020 Mentha Executive Search</p>
+                        About us
+                    </h2>
+
+                    <div class="divtextoabout">
+                        <p class="textoabout">
+                            Nuestro compromiso con las empresas es realizar la búsqueda de los mejores
+                            candidatos para cubrir la necesidad del día a día.
+                            Pero puede ser que esos valores se encuentren en la empresa.
+                            Acompañamos y asesoramos a aquellos profesionales que quieren reorientar su carrera.
+                            Lo que podemos asegurar que en todos los casos nuestro compromiso es total.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 about2">
+                    <img class="imgpolen" src="images/granospolen.jpg" alt="imgpolen">
+                </div>
+            </div>
         </div>
 
+        <!-- Services for Enterprises -->
 
+        <section id="empresas" class="brownSections">
+            <div class="container-fluid">
+                <h2>
+                    <span class="palote">|</span>
 
-    </div>
+                    Services for Enter
+                </h2>
+
+                <div class="row particulares">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card empresascard">
+                            <img src="images/iconoBusqueda.png" class="card-img-top" alt="Searching icon">
+
+                            <div class="card-body">
+                                <h4 class="h4-empresas">Búsqueda valor</h4>
+
+                                <p class="card-text">
+                                    Localizar los mejores profesionales para su negocio
+                                </p>
+
+                                <button type="button" class="btn btn-outline-success btn-lg empresas-button">Leer
+                                    más</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card empresascard">
+                            <img src="images/iconoBusqueda.png" class="card-img-top" alt="Searching icon">
+
+                            <div class="card-body">
+                                <h4 class="h4-empresas">Reorientar carreras</h4>
+
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.
+                                </p>
+
+                                <button type="button"
+                                    class="btn btn-outline-success btn-lg empresas-button">Ampliar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card empresascard">
+                            <img src="images/iconoBusqueda.png" class="card-img-top" alt="Searching icon">
+
+                            <div class="card-body">
+                                <h4 class="h4-empresas">Reorientar carreras</h4>
+
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.
+                                </p>
+
+                                <button type="button"
+                                    class="btn btn-outline-success btn-lg empresas-button">Ampliar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card empresascard">
+                            <img src="images/iconoBusqueda.png" class="card-img-top" alt="Searching icon">
+
+                            <div class="card-body">
+                                <h4 class="h4-empresas">Reorientar carreras</h4>
+
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.
+                                </p>
+
+                                <button type="button"
+                                    class="btn btn-outline-success btn-lg empresas-button">Ampliar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services for Particulars -->
+
+        <section id="particulares" class="whiteSections">
+            <div class="container-fluid">
+                <h2>
+                    <span class="palote">|</span>
+
+                    Services for Partic
+                </h2>
+
+                <div class="row particulares">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="images/movingrocks.jpg" class="card-img-top" alt="Movingrock img">
+
+                            <div class="card-body">
+                                <h4 class="h4-particulares">Reorientar carreras</h4>
+
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.
+                                </p>
+
+                                <button type="button"
+                                    class="btn btn-outline-success btn-lg particulares-button">Ampliar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="images/movingrocks.jpg" class="card-img-top" alt="Movingrock img">
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="images/movingrocks.jpg" class="card-img-top" alt="Movingrock img">
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="images/movingrocks.jpg" class="card-img-top" alt="Movingrock img">
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+        <section id="footer" class="brownSections">
+            <div class="container-fluid">
+                <h2>
+                    <span class="palote">|</span>
+
+                    Contact
+                </h2>
+
+                <div class="row">
+                    <div class="col-md-6 footer1">
+                        <img class="imglogo" src="images/LogoGris copia.png" alt="logo">
+                    </div>
+
+                    <div class="col-md-6 footer2">
+                        <div class="contactdata">
+                            <p>Contacto</p>
+
+                            <p>Mail</p>
+
+                            <p>Wepage</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <a href="https://www.linkedin.com/in/eliana-garc%C3%ADa-5513396/?originalSubdomain=es"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin footer-icon"></i>
+                    </a>
+
+                    <a href="mailto:agormazabal@gmail.com?subject=Contacto">
+                        <i class="fas fa-envelope footer-icon"></i>
+                    </a>
+
+                    <p class="footer-p">
+                        © Copyright 2020 Mentha Executive Search
+                    </p>
+                </div>
+            </div>
+        </section>
     </section>
-    
 </body>
 
 </html>

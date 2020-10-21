@@ -8,7 +8,7 @@ body {
    
 }
 h1 {
-    font-size: 2.75rem;
+    font-size: 2.60rem;
     font-weight: 200;
     text-align: left;
     
@@ -57,9 +57,49 @@ p {
 }
 
 /* Cabecera */
+.arriba {
+    
+    z-index:3;
+    margin-bottom: 0.1%;
+    
+}
+.col1 {
+
+    position: absolute;
+   /*  background-color: red; */
+    text-align: left;
+    width: 75%;
+    z-index:3;
+}
+.epa {
+    position: absolute;
+    margin-left: 105%;
+}
+.col2 {
+    /* background-color: blue; */
+    margin-left:auto; 
+    text-align: right;
+    position: absolute;
+    z-index:4;
+  
+}
+.botonmenu {
+    margin-top: 15%;
+}
+#menu {
+    width:10%;
+    margin-left:80%;
+    z-index:3;
+    background-color: #444444;
+}
 
 #navbar {
     background-color: #444444 !important;
+    padding: 0;
+    margin: 0 !important; 
+}
+.bg-dark {
+    background-color: transparent !important;
 }
 
 .menthaimg {
@@ -117,10 +157,7 @@ p {
 }
 
 .titulo {
-    
-    /* text-align: center;
-    /* padding-top: 20px; */
-    padding-left:0.95%;
+    padding-left:2.2%; 
     color: #c4c4c4;
 }
 .cabecera {
@@ -166,13 +203,22 @@ p {
 }
 
 @media (max-width: 900px) {
+   .menthaimg{
+       left: 0px;
+       right: 0px;
+   }
    .imglogo {
     width: 254px;
     height: 120px;
-    margin:0 auto;
     } 
-    .titulo  {
-        font-size:2rem;
+    .col1 {
+        text-align: center;
+        z-index: 4;
+    }
+  .titulo  {
+        font-size:1.77rem;
+        padding-left:0%;
+        text-align: center; 
     }
     .textosCabecera {
         padding-top: 50%; 
@@ -188,6 +234,9 @@ p {
     }
     .palote {
         font-size: 2rem;
+    }
+    .textabout {
+        font-size: 1.5rem;
     }
 }
 
@@ -240,9 +289,9 @@ margin: 10% 5%;
     border: 2px solid transparent;
     border-color: #a2c591;
     font-family: 'Montserrat', sans-serif;
-    position: absolute; 
+    /* position: absolute; 
     right:38%;
-    bottom: 1%;   
+    bottom: 1%;   */
 }
 
 .empresas-button:hover {
@@ -305,17 +354,20 @@ text-align: center;
 }
 
 .contactdata {
-    margin: 100px 50px 0 0;  
+    margin: 10% 0 0 0;  
 }
 
 .footer-icon {
     margin: 20px 10px;
     font-size: 1.5rem;
+    color: #ededed;
 }
-
+.footer-icon:hover{
+    color: #c4c4c4;
+}
 .footer-p {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 0.75rem;
     font-weight: 200;
 
 }
