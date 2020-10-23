@@ -9,7 +9,8 @@
     </meta>
 
     <title>Mentha Executive Search</title>
-
+    <!-- Icono pestaña navegador -->
+    <link rel="shortcut icon" href="images/favicon.ico">
     <!-- Google fonts -->
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap" rel="stylesheet">
@@ -28,7 +29,7 @@
 
     <!-- hoja de estilos -->
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylesloco2.css">
     </link>
 
     <!-- Necesario para que funcione botón desplegable de la barra de navegacion, son link js de Bootstrap -->
@@ -44,84 +45,72 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <!-- Cabecera -->
+    <!-- Cabecera                                                               -->
 
     <section id="Cabecera" class="brownSections">
+
         <div class="container-fluid">
-<!--            <div class="col1">
+
+            <div class="col-lg-8 mr-auto col1">
                 <img src=" images/logoCabecera.png" class="d-inline-block align-top imglogo" alt="">
                 <h1 class="titulo">Executive Search</h1>
             </div>
-            -->
-     <!--   <div class="epa"><h4>epa</h4></div> -->
-      <div class="row arriba"> 
- 
-                <div class="col-lg-6 col1">
-                    <img src=" images/logoCabecera.png" class="d-inline-block align-top imglogo" alt="">
-                    <h1 class="titulo">Executive Search</h1>
-                </div>
+
+            <!-- Default dropleft button -->
             
-                <div class="col-lg-12 ml-auto col2">
-                    <nav id="menu" class="navbar navbar-dark bg-dark">
-                        <!--   <a class="navbar-brand mr-auto"></a> -->
+            <div class="btn-group dropleft menu">
+                <button type="button" class="btn btn-secondary menuicon" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <!--<div class=row><p>Aitor</p></div>-->
+                <div class="dropdown-menu listamenu">
+                    <!-- Dropdown menu links -->
+                    
+                    <ul class="navbar-nav">
+                        <li class="nav-item  active">
+                            <a class="nav-link" href="#">
+                                Inicio
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
 
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#nosotros">About us</a>
+                        </li>
 
-                        <button class="navbar-toggler botonmenu" type="button" data-toggle="collapse"
-                            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#empresas">Empresas</a>
+                        </li>
 
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
-                                <li class="nav-item mr-auto active">
-                                    <a class="nav-link" href="#">
-                                        Home
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#particulares">Particulares</a>
+                        </li>
 
-                                        <span class="sr-only">(current)</span>
-                                    </a>
-                                </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#footer">Contacto</a>
+                        </li>
+<!--
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Idiomas
+                            </a>
 
-                                <li class="nav-item mr-auto">
-                                    <a class="nav-link" href="#">About us</a>
-                                </li>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item active" href="#">Español</a>
 
-                                <li class="nav-item mr-auto">
-                                    <a class="nav-link" href="#">Pricing</a>
-                                </li>
+                                <a class="dropdown-item" href="#">Inglés</a>
 
-                                <li class="nav-item dropdown mr-auto">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown
-                                        link</a>
-
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Action</a>
-
-                                        <a class="dropdown-item" href="#">Another action</a>
-
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                            </div>
+                        </li> -->
+                    </ul> 
                 </div>
-         </div> 
-            <!--      <nav id="navbar" class="navbar navbar-light bg-light"> 
-        
-    <a class="navbar-brand menthaimg" href="#">
-          <img src="images/logoCabecera.png" class="d-inline-block align-top imglogo" alt="">
-
-          <h1 class="titulo">Executive Search</h1>
-        </a>
-      </nav> -->
-
-
-
+            </div>
 
             <div class="container-fluid  cabeceradiv">
                 <div class="textosCabecera">
@@ -135,7 +124,7 @@
         </div>
     </section>
 
-    <!-- About us -->
+    <!-- About us                                                                  -->
 
     <section id="nosotros" class="whiteSections">
         <div class="container-fluid">
@@ -171,7 +160,7 @@
                 <h2>
                     <span class="palote">|</span>
 
-                    Services for Enter
+                    Services for Enterprises
                 </h2>
 
                 <div class="row particulares">
@@ -222,8 +211,8 @@
                                     card's content.
                                 </p>
 
-                                <button type="button"
-                                    class="btn btn-outline-success btn-lg empresas-button">Ampliar</button>
+                                <button type="button" class="btn btn-outline-success btn-lg empresas-button">Ampliar
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -256,7 +245,7 @@
                 <h2>
                     <span class="palote">|</span>
 
-                    Services for Partic
+                    Services for Particulares
                 </h2>
 
                 <div class="row particulares">
@@ -330,18 +319,18 @@
                     Contact
                 </h2>
 
-                <div class="row">
+                <div class="row contacto">
                     <div class="col-md-6 footer1">
                         <img class="imglogo" src="images/LogoGris copia.png" alt="logo">
                     </div>
 
                     <div class="col-md-6 footer2">
                         <div class="contactdata">
-                            <p>Contacto</p>
+                            <p>Eliana García</p>
 
-                            <p>Mail</p>
+                            <p class="mail">info@menthasearch.com</p>
 
-                            <p>Wepage</p>
+                            <p class="mail">+34 999 99 99 99</p>
                         </div>
                     </div>
                 </div>
@@ -352,17 +341,20 @@
                         <i class="fab fa-linkedin footer-icon"></i>
                     </a>
 
-                    <a href="mailto:agormazabal@gmail.com?subject=Contacto">
+                    <a href="mailto:agormazabal@gmail.com?subject=Contacto%desde%MenthaSearch.com">
                         <i class="fas fa-envelope footer-icon"></i>
                     </a>
 
                     <p class="footer-p">
-                        © Copyright 2020 Mentha Executive Search
+                        © Copyright 2020 Mentha Search
                     </p>
                 </div>
             </div>
         </section>
     </section>
+    <!-- JQuery y Javascript. Aqui pagina ya se ha cargado -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>
