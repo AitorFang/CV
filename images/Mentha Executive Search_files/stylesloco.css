@@ -1,8 +1,4 @@
 /* Dentro de cada selector, ordenar alfabeticamente las propiedades */
-html {
-scroll-behavior: smooth;
-}
-
 body {
     /* max-width: 2000px; */
    /* overflow-x: hidden; */
@@ -78,24 +74,6 @@ p {
     position: absolute;
     margin-left: 105%;
 }
-.menu {
-    position: absolute;
-  /*  right: 6px; */
-  right: 5%;      
-  top: 5px;
-    z-index: 3;
-    margin-left:100px;   
-}
-.menuicon {
-    background-color: transparent;
-    color:#a2c591;
-    font-size: 1.5rem;
-}
-.menuicon:hover{
-    color:#8a9a6e;
-
-}
-
 .col2 {
     /* background-color: blue; */
     text-align: left;
@@ -113,14 +91,12 @@ p {
     width: 25%;
     text-align: right;
     margin-left: 75%;
-    position: absolute; 
+    position: fixed;
     z-index: 4;
-    padding-top: 20px;
 }
 .botonmenu {  /*habría que ponerselo al dropdown */
  /*   margin-top: 2%; */
     margin-right: 40px;
-    position: fixed;
        /* text-align: right; */
 }
 
@@ -134,7 +110,7 @@ p {
 .menutable {                        /* desplegable menu */
     /* background-color: whitesmoke; */
     background-color: #191919;
-    opacity: 0.4;
+    opacity: 0.9;
 }
 
 #navbar {
@@ -145,16 +121,11 @@ p {
 .nav-link {                         /* texto opciones menu */
    /* color: #191919 !important; */
    font-size: 200 !important;
-   color:#c4c4c4;
-
 }
 .nav-item {
     padding-left:0.25rem;
-    padding-right: 0.5rem;  
-}
-.listamenu {
-    background-color: #191919
-    opacity: 0.4;
+    padding-right: 0.5rem;
+    
 }
 
 .bg-dark {
@@ -271,10 +242,6 @@ p {
     width:  300px;
     height: auto;
     } 
-    .menu {
-       /* right:auto;
-       /* left:auto; */
-    }
     .col1 {
     /*    text-align: center;
     /*    z-index: 4;
@@ -286,7 +253,7 @@ p {
         padding-right: 25px;
     } 
    .titulo  {
-        font-size:0.77rem;
+        font-size:1.77rem;
         padding-left:0%;
      /*   text-align: center; */
     }
@@ -294,26 +261,26 @@ p {
         padding-top: 50%; 
     }
     .lema {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .sublema {
-       font-size: 0.5rem;
+       font-size: 1.5rem;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
     p {
-        font-size: 0.75rem;
+        font-size: 1.75rem;
     }
     .palote {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .textabout {
-        font-size: 0.5rem;
+        font-size: 1.5rem;
     }
     .card-text {
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
 }
 
@@ -414,7 +381,7 @@ margin: 10% 5%;
 /* Footer */
 
 .contacto {
-    margin-top: auto auto 0 auto;
+    margin-top: 3rem;
 }
 .mail{
     font-weight: 200;
