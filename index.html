@@ -55,23 +55,23 @@
 
         <div class="container-fluid">
 
-            <div class="col-lg-8 mr-auto col1">
+            <div class="col-9 mr-auto divhierbas">
                 <img src=" images/logoCabecera.png" class="d-inline-block align-top imglogo" alt="">
                 <h1 class="titulo">Executive Search</h1>
             </div>
 
             <!-- Default dropleft button -->
-            
+
             <div class="btn-group dropleft menu">
-                <button type="button" class="btn btn-secondary menuicon" data-toggle="dropdown" aria-haspopup="true"
+                <button id="botonmenu" type="button" class="btn btn-secondary menuicon" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
                     <i class="fas fa-bars"></i>
                 </button>
                 <!--<div class=row><p>Aitor</p></div>-->
-                <div class="dropdown-menu listamenu">
+                <div id="lista" class="dropdown-menu listamenu">
                     <!-- Dropdown menu links -->
-                    
-                    <ul class="navbar-nav">
+
+                    <ul class="navbar-nav listaopciones">
                         <li class="nav-item  active">
                             <a class="nav-link" href="#">
                                 Inicio
@@ -94,7 +94,7 @@
                         <li class="nav-item ">
                             <a class="nav-link" href="#footer">Contacto</a>
                         </li>
-<!--
+                        <!--
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -108,13 +108,13 @@
 
                             </div>
                         </li> -->
-                    </ul> 
+                    </ul>
                 </div>
             </div>
 
             <div class="container-fluid  cabeceradiv">
                 <div class="textosCabecera">
-                    <p class="lema">Te acompaño en tu búsqueda</p>
+                    <p class="lema">Te acompañamos en tu búsqueda</p>
 
                     <p class="sublema">
                         Servicios a particulares y empresas
@@ -128,8 +128,8 @@
 
     <section id="nosotros" class="whiteSections">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-sm-8 about1">
+          <div class="row aboutrow"> 
+                <div class="col-lg-6 about1">
                     <h2>
                         <span class="palote">|</span>
 
@@ -150,7 +150,7 @@
                 <div class="col-lg-6 about2">
                     <img class="imgpolen" src="images/granospolen.jpg" alt="imgpolen">
                 </div>
-            </div>
+            </div> 
         </div>
 
         <!-- Services for Enterprises -->
@@ -251,7 +251,7 @@
                 <div class="row particulares">
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="card">
-                            <img src="images/movingrocks.jpg" class="card-img-top" alt="Movingrock img">
+                            <img src="images/movingrocks.jpg" class="card-img-top imgmovrocks" alt="Movingrock img">
 
                             <div class="card-body">
                                 <h4 class="h4-particulares">Reorientar carreras</h4>
@@ -315,7 +315,6 @@
             <div class="container-fluid">
                 <h2>
                     <span class="palote">|</span>
-
                     Contact
                 </h2>
 
@@ -326,24 +325,35 @@
 
                     <div class="col-md-6 footer2">
                         <div class="contactdata">
-                            <p>Eliana García</p>
+                            <p class="nombrecontacto">Eliana García</p>
 
-                            <p class="mail">info@menthasearch.com</p>
+                            <p>info@menthasearch.com</p>
 
-                            <p class="mail">+34 999 99 99 99</p>
+                            <p>+34 999 99 99 99</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="container-fluid">
-                    <a href="https://www.linkedin.com/in/eliana-garc%C3%ADa-5513396/?originalSubdomain=es"
-                        target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin footer-icon"></i>
-                    </a>
+                <div class="container-fluid infolegal">
+                    <p class="linksociales">
+                        <a href="https://www.linkedin.com/in/eliana-garc%C3%ADa-5513396/?originalSubdomain=es"
+                            target="_blank" rel="noopener noreferrer nofollow">
+                            <i class="fab fa-linkedin footer-icon"></i>
+                        </a>
 
-                    <a href="mailto:agormazabal@gmail.com?subject=Contacto%desde%MenthaSearch.com">
-                        <i class="fas fa-envelope footer-icon"></i>
-                    </a>
+                        <a href="mailto:agormazabal@gmail.com?subject=Contacto">
+                            <i class="fas fa-envelope footer-icon"></i>
+                        </a>
+                    </p>
+
+                    <p class="textolegal">
+                        <a>Política de Privacidad</a>
+                        <span class="separador">|</span>
+                        <a>Política de cookies</a>
+                        <span class="separador">|</span>
+                        <a>Términos y condiciones</a>
+                    </p>
+
 
                     <p class="footer-p">
                         © Copyright 2020 Mentha Search
@@ -354,7 +364,7 @@
     </section>
     <!-- JQuery y Javascript. Aqui pagina ya se ha cargado -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="index.js" charset="utf-8"></script>
+    <script src="index.js" charset="utf-8"></script> 
 </body>
 
 </html>

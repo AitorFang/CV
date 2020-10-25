@@ -2,25 +2,46 @@
 $("h1").css("color", "red");
 }); */
 
-$("button").on("mouseover",function(){
-$(".dropdown-menu").slideToggle();
+/* event.preventDefault() - evita el comportamiento por defecto de un elemento */
+
+/* Animaciones sobre el menú */
+
+$('#botonmenu').on('click',function(){  
+    console.log('meto una nueva clase');
+    $('#botonmenu').addClass('active-style');
+    $('#lista').slideToggle(); 
+    /* $('#lista').show("slide", { direction: "left" }, 6000); */
 });
 
-$(".dropdown-menu").on("mouseleave",function(){
-    $(".dropdown-menu").hide();
+
+$('#lista').on('mouseleave',function(){ 
+ /*$('#lista').hide(); */
+ $("#lista").animate({opacity:'0.2'}).slideToggle();
+    $("#lista").animate({opacity:'1'}); /* devuelvo valor de opacidad */
+ $('#botonmenu').removeClass('active-style');
+ $('#botonmenu').delay(600).blur(); /*retorna boton a situacion inicial, no focus() */
+ console.log('quito una nueva clase');
 });
 
-/* if($(window.location.hash).length > 0){
-    $('html, body').animate({ scrollTop: $(window.location.hash).offset().top}, 1000);
-} */
-/*
-jQuery(document).ready(function(){
-    $('h2').append('<a href="#top" class="gototop">Subir</a>');
-    linkInterno = $('a[href^="#"]');
-    linkInterno.on('click',function(e) {
-    e.preventDefault();
-    var href = $(this).attr('href');
-    $('html, body').animate({ scrollTop : $( href ).offset().top }, 'slow');
-    });
+
+$(".nav-link").click(function(){
+    $("#lista").animate({opacity:'0.2'}).slideToggle();
+    $("#lista").animate({opacity:'1'}); /* devuelvo valor de opacidad */
+    $('#botonmenu').delay(600).blur(); /*retorna boton a situacion inicial, no focus() */
+})
+
+/* Animaciones imagenes de seccion particulares */
+
+$(".imgmovrocks").on("mouseover",function(){
+        $(".imgmovrocks").animate ({
+        width: '102%',
+        height:'102%'
+    },"slow");
 });
-*/
+
+$('.imgmovrocks').on('mouseleave',function(){
+    $('.imgmovrocks').animate ({
+        width: '100%',
+        height:'100%'
+    },'slow');
+});
