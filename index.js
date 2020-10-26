@@ -11,27 +11,27 @@ $(document).on("scroll", function(){
 /* Al cargar el documento, fijo el menu */
 
 $(document).ready(function () {
-    $('.menu').css({ 'position': 'fixed' });
-    console.log('pogno fixed el menu');
+    $(".menu").css({ "position": "fixed" });
+    console.log("pogno fixed el menu");
 });
 
 /* Animaciones sobre el menú */
 if (isMobile()) {
     // código en el caso de que sea un dispositivo móvil
     console.log("estoy desde móvil");
-    $('#botonmenu').on('click', function () {
-        console.log('meto una nueva clase');
-        $('#botonmenu').addClass('active-style');
-        $('#lista').slideToggle();
+    $("#botonmenu").on("click", function () {
+        console.log("meto una nueva clase");
+        $("#botonmenu").addClass("active-style");
+        $("#lista").slideToggle();
         /* $('#lista').show("slide", { direction: "left" }, 6000); */
         
     });
 
     $(".nav-link").click(function (event) {
         /* event.preventDefault(); */
-        console.log('clck en link de laa lista');
-        $("#lista").animate({ opacity: '0.2' }).slideToggle();
-        $("#lista").animate({ opacity: '1' }); /* devuelvo valor de opacidad */
+        console.log("clck en link de laa lista");
+        $("#lista").animate({ opacity: "0.2" }).slideToggle();
+        $("#lista").animate({ opacity: "1" }); /* devuelvo valor de opacidad */
         $("#botonmenu").delay(600).blur(); /*retorna boton a situacion inicial, no focus() */
     });
 
@@ -40,28 +40,23 @@ if (isMobile()) {
 
     // código en el caso de que no sea un dispositivo móvil
 
-    $('#botonmenu').on('click', function () {
-        console.log('meto una nueva clase');
-        $('#botonmenu').addClass('active-style');
-        $('#lista').slideToggle();
+    $("#botonmenu").on("click", function () {
+        console.log("meto una nueva clase en click boton");
+        if ($("#botonmenu").hasClass("active-style")){
+            $("#botonmenu").delay(600).blur(); /*retorna boton a situacion inicial, no focus() */
+        }else{
+        $("#botonmenu").addClass("active-style");
+        };
+        $("#lista").slideToggle();
         /* $('#lista').show("slide", { direction: "left" }, 6000); */
     });
 
-
-    $('#lista').on('mouseleave', function () {
-        /*$('#lista').hide(); */
-        $("#lista").animate({ opacity: '0.2' }).slideToggle();
-        $("#lista").animate({ opacity: '1' }); /* devuelvo valor de opacidad */
-        $('#botonmenu').removeClass('active-style');
-        $('#botonmenu').delay(600).blur(); /*retorna boton a situacion inicial, no focus() */
-        console.log('quito una nueva clase');
-    });
-
-
     $(".nav-link").click(function () {
-        $("#lista").animate({ opacity: '0.2' }).slideToggle();
-        $("#lista").animate({ opacity: '1' }); /* devuelvo valor de opacidad */
+        $("#lista").animate({ opacity: "0.2" }).slideToggle();
+        $("#lista").animate({ opacity: "1" }); /* devuelvo valor de opacidad */
         $("#botonmenu").delay(600).blur(); /*retorna boton a situacion inicial, no focus() */
+        $('#botonmenu').removeClass("active-style");
+        console.log("quito clase en visita link");
     });
 }
 
@@ -70,16 +65,16 @@ if (isMobile()) {
 
 $(".imgmovrocks").on("mouseover", function () {
     $(".imgmovrocks").animate({
-        width: '102%',
-        height: '102%'
+        width: "102%",
+        height: "102%"
     }, "slow");
 });
 
-$('.imgmovrocks').on('mouseleave', function () {
-    $('.imgmovrocks').animate({
-        width: '100%',
-        height: '100%'
-    }, 'slow');
+$(".imgmovrocks").on("mouseleave", function () {
+    $(".imgmovrocks").animate({
+        width: "100%",
+        height: "100%"
+    }, "slow");
 });
 
 /* Determinar si la web es visitadad desde dispositivo móvil */
