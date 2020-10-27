@@ -64,9 +64,20 @@ p {
 .divhierbas {
     position: absolute;
     text-align: left;
-    width: 450px;
+    width: 440px;
     z-index:3;
     padding:1% 0 0 3.25%;
+}
+.contenedortitulo{
+    float:left;
+    
+
+
+}
+.titulo {
+    
+    font-size: 2.48rem;
+    text-align: center;
 }
 
 .menu {
@@ -76,7 +87,6 @@ p {
   top:3%;
   right:3%;
   text-align: center;
-  /* transform: translateX(10%); */
   z-index: 3;
   
 }
@@ -119,15 +129,7 @@ p {
        /* text-align: right; */
 }
 
-#menu {
-  /*  width: 99% !important;
-    margin-left:80%;
-    z-index:3;
-    background-color: #444444; */
-} 
-
 .menutable {                        /* desplegable menu */
-    /* background-color: whitesmoke; */
     background-color: #191919;
     opacity: 0.4;
 }
@@ -155,7 +157,7 @@ p {
 .listamenu {
     background-color: #191919;
     opacity: 0.9;
-    min-width: 15rem;
+    min-width: 19rem;
     font-size:1.5rem;
 }
 
@@ -187,13 +189,14 @@ p {
 .imglogo {
     width: 380px;
     height: 180px;
+    padding-left: 4px;
+}
+.titulodiv {
+    width: 300px;
+    background-color: red;  
 }
 
-.titulo {
-    
-    text-align: center;
-    padding-right: 0.45rem;
-}
+
 .cabecera {
       /*  width: 2000px;
         height:1500px;
@@ -236,70 +239,8 @@ p {
     font-size: 2rem;
 }
 
-@media (max-width: 900px) {
-   .menthaimg{
-       left: 0px;
-       right: 0px;
-    }
-   .imglogo {
-    width:  300px;
-    height: auto;
-    } 
-    .menu {
-    
-  right:5%;
-    } 
-  /*  #lista{  /* evita el espacio en blanco al cargar */
- /*    display: block;
-      display: none;  
-    } */
-    .menuicon {
-        font-size: 1rem;
-    }
-    .listopciones {
-        width:250px;
-        font-size:1.5rem;
-    }
-    .divhierbas {
-    /*    text-align: center;
-    /*    z-index: 4;
-        padding:1% 0 0 0;
-        right:-2%;*/
-    } 
-   .col2 {
-        text-align:center;
-        padding-right: 25px;
-    } 
-   .titulo  {
-        font-size: 1.75rem;
-        padding: 0;
-    }
-    .textosCabecera {
-        padding: 50% 15px 0 15px;
-    }
-    .lema {
-        font-size: 2rem;
-    }
-    .sublema {
-       font-size: 1.5rem;
-    }
 
-    h2 {
-        font-size: 2.5rem;
-    }
-    p {
-        font-size: 1.75rem;
-    }
-    .palote {
-        font-size: 2rem;
-    }
-    .textabout {
-        font-size: 1.5rem;
-    }
-    .card-text {
-        font-size: 1.5rem;
-    }
-}
+
 
 /* About us ------------------------------------------*/
 
@@ -313,12 +254,12 @@ p {
 }
 .about1 {
    /* background-color: teal; */
-   margin 10% 0 0 0;
+   margin: 10% 0 0 0;
 }
 
 .about2 {
    /* background-color: tomato; */
-     margin 10% 0 0 0;
+     margin: 10% 0 0 0;
 }
 .imgpolen {
     /* position: relative;
@@ -447,12 +388,85 @@ width: 400px;
 .infolegal {
     margin-top: 6rem;
 }
-.linksociales {
 
-}
 .textolegal {
     font-size: 1rem;
 }
 .separador {
     color: #ededed; 
+}
+@media (max-width: 900px) {
+    .menthaimg{
+        left: 0px;
+        right: 0px;
+     }
+    .imglogo {
+     width:  300px;
+     height: auto;
+     } 
+     
+     .menu {
+     
+   right:5%;
+     } 
+   /*  #lista{  /* evita el espacio en blanco al cargar */
+  /*    display: block;
+       display: none;  
+     } */
+     .menuicon {
+         font-size: 1rem;
+     }
+     .listamenu {
+         min-width: 15rem;
+     font-size:1.25rem;
+     }
+     
+    .col2 {
+         text-align:center;
+         padding-right: 25px;
+     } 
+    .titulo  {
+        
+         font-size: 1.92rem; 
+     }
+     .textosCabecera {
+         padding: 50% 15px 0 15px;
+     }
+     .lema {
+         font-size: 2rem;
+     }
+     .sublema {
+        font-size: 1.5rem;
+     }
+ 
+     h2 {
+         font-size: 2rem;
+         margin-left: 1rem;
+     }
+     
+     p {
+         font-size: 1.75rem;
+     }
+     .palote {
+         font-size: 2rem;
+     }
+     .textoabout {
+         font-size: 1.5rem;
+     }
+     .card-text {
+         font-size: 1.5rem;
+     }
+ }
+ 
+ @media (max-width:400px) and (min-width:321px) {
+     .titulo{
+         font-size: 1.77rem;
+     }   
+ }
+
+ @media (max-width:320px)  {
+    .titulo{
+        font-size: 1.5rem;
+    }
+    
 }

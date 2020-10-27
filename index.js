@@ -8,11 +8,34 @@ $("h1").css("color", "red");
 $(document).on("scroll", function(){
     $('.menu').css({'position':'fixed', 'background-color': 'red'});
 });
-/* Al cargar el documento, fijo el menu */
+/* Al cargar el documento, fijo el menu y lo posiciono respecto al ancho del dispositivo */
 
 $(document).ready(function () {
-    $(".menu").css({ "position": "fixed" });
+    var totalWidth = $(".container-fluid").css("width");
+    var margin = parseInt(totalWidth) - 50 ;
+   if (margin < 900) {
+
+   
+    var marginValue = margin + "px";
+    console.log(marginValue);
+    console.log(totalWidth);
+    $(".menu").css({ "marginLeft": marginValue, "right":"0px" ,"left":"0px","paddingRight": "10px", "width":"50px"});
+    }
+    /* Ambos casos pongo fijo el menu */
+    $(".menu").css({ "position": "fixed"});
     console.log("pogno fixed el menu");
+});
+
+/* Deshabilitar scroll horizontal */
+$(function(){
+    var $body = $(document);
+    $body.on("scroll" , function() {
+        console.log("parte de scroll");
+        console.log($body.scrollLeft());
+        if($body.scrollLeft() !== 0) {
+            $body.scrollLeft(0);
+        }
+    });
 });
 
 /* Animaciones sobre el menú */
@@ -20,8 +43,16 @@ if (isMobile()) {
     // código en el caso de que sea un dispositivo móvil
     console.log("estoy desde móvil");
     $("#botonmenu").on("click", function () {
-        console.log("meto una nueva clase");
+        if ($("#botonmenu").hasClass("active-style")){
+            console.log("ya tenia la clase, retorno el boton a situación inicial");
+            $("#botonmenu").removeClass("active-style");
+            $("#botonmenu").delay(600).blur(); /*retorna boton a situacion inicial, no focus() */
+        }else{
         $("#botonmenu").addClass("active-style");
+        console.log("meto una nueva clase en evento click de boton");
+        };
+        
+        
         $("#lista").slideToggle();
         /* $('#lista').show("slide", { direction: "left" }, 6000); */
         
@@ -35,7 +66,7 @@ if (isMobile()) {
         $("#botonmenu").delay(600).blur(); /*retorna boton a situacion inicial, no focus() */
     });
 
-} else {
+} else {            /*dispositivos no móviles */
     console.log("no estoy desde móvil");
 
     // código en el caso de que no sea un dispositivo móvil
@@ -43,6 +74,7 @@ if (isMobile()) {
     $("#botonmenu").on("click", function () {
         console.log("meto una nueva clase en click boton");
         if ($("#botonmenu").hasClass("active-style")){
+            console.log("ya tenia la clase, retorno el boton a situación inicial");
             $("#botonmenu").delay(600).blur(); /*retorna boton a situacion inicial, no focus() */
         }else{
         $("#botonmenu").addClass("active-style");
@@ -58,24 +90,27 @@ if (isMobile()) {
         $('#botonmenu').removeClass("active-style");
         console.log("quito clase en visita link");
     });
+
+
+    /* Animaciones imagenes de seccion particulares */
+
+    $(".imgmovrocks").on("mouseover", function () {
+     $(".imgmovrocks").animate({
+        width: "102%",
+        height: "102%"
+      }, "slow");
+        });
+
+    $(".imgmovrocks").on("mouseleave", function () {
+     $(".imgmovrocks").animate({
+        width: "100%",
+        height: "100%"
+     }, "slow");
+    });
+
 }
 
 
-/* Animaciones imagenes de seccion particulares */
-
-$(".imgmovrocks").on("mouseover", function () {
-    $(".imgmovrocks").animate({
-        width: "102%",
-        height: "102%"
-    }, "slow");
-});
-
-$(".imgmovrocks").on("mouseleave", function () {
-    $(".imgmovrocks").animate({
-        width: "100%",
-        height: "100%"
-    }, "slow");
-});
 
 /* Determinar si la web es visitadad desde dispositivo móvil */
 
